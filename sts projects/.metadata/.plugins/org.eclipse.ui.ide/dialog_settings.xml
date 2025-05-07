@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="org.eclipse.buildship:3.1.10.v20240802-1613"/>
+		<item value="org.eclipse.egit:7.2.0.202503040940-r"/>
+		<item value="org.eclipse.emf.common:2.34.0.v20241204-1554"/>
+		<item value="org.eclipse.emf.ecore:2.39.0.v20241018-1213"/>
+		<item value="org.eclipse.epp.mpc:1.12.0.v20250130-1529"/>
+		<item value="org.eclipse.help:2.3.2100.v20250228-0140"/>
+		<item value="org.eclipse.jdt:3.20.100.v20250228-0140"/>
+		<item value="org.eclipse.jgit.gpg.bc:7.2.0.202503040940-r"/>
+		<item value="org.eclipse.jgit.http.apache:7.2.0.202503040940-r"/>
+		<item value="org.eclipse.jgit.lfs:7.2.0.202503040940-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:7.2.0.202503040940-r"/>
+		<item value="org.eclipse.jgit:7.2.0.202503040940-r"/>
+		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:23.0.2.v20250131-0604"/>
+		<item value="org.eclipse.m2e.feature:2.8.0.20250224-0720"/>
+		<item value="org.eclipse.pde:3.16.200.v20250228-0140"/>
+		<item value="org.eclipse.platform:4.35.0.v20250228-0640"/>
+		<item value="org.eclipse.rcp:4.35.0.v20250228-0640"/>
+		<item value="org.eclipse.tm.terminal.connector.ssh.feature:12.0.0.202501171425"/>
+		<item value="org.eclipse.tm.terminal.control.feature:12.0.0.202501171425"/>
+		<item value="org.eclipse.tm.terminal.feature:12.0.0.202410081652"/>
+		<item value="org.eclipse.tm.terminal.view.feature:12.0.0.202501171425"/>
+		<item value="org.eclipse.wst.json_ui.feature:1.1.11.v202308160419"/>
+		<item value="org.eclipse.wst.web_ui.feature:3.36.0.v202503020853"/>
+		<item value="org.eclipse.wst.xml_ui.feature:3.37.0.v202503020853"/>
+		<item value="org.jboss.tools.m2e.wro4j.feature:1.2.1.202301111328"/>
+		<item value="org.sonatype.m2e.egit.feature:0.17.0.202209271423"/>
+	</list>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/RestFullWebServicesChanged/src/main/java/com/demo/project/resource/UserNotFoundException.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="671"/>
+			<item key="DIALOG_Y_ORIGIN" value="182"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.springsource.ide.eclipse.commons.gettingstarted.wizard.boot.NewSpringBootWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
+		</list>
+		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="0"/>
+			<item key="DIALOG_Y_ORIGIN" value="0"/>
+			<item key="DIALOG_WIDTH" value="875"/>
+			<item key="DIALOG_HEIGHT" value="563"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="828"/>
+		<item key="DIALOG_HEIGHT" value="482"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.10\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.9\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.8\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\grade-submission\starter\grade-submission"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.7\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.6\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.5\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.4\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.3\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\conditionals\starter\conditionals"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\02. model-view-controller\workbook 2.2\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\spring-boot-bootcamp-resources-main\spring-boot-bootcamp-resources-main\01. intro-to-springboot\workbook 1.3\starter\workbook"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 2 - Object Oriented Programming\16. Higher Order Functions\Extra Practice\Part 1"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 2 - Object Oriented Programming\15. Inheritance\Workbooks\Workbook 12.2\starter"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\bootcamp_practice"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 1 - Introduction to Java\2. Variables\Workbook 2.5"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 1 - Introduction to Java\2. Variables\Workbook 2.4"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 1 - Introduction to Java\2. Variables\Workbook 2.3"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 1 - Introduction to Java\2. Variables\Workbook 2.2"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 1 - Introduction to Java\2. Variables\Workbook 2.1"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 1 - Introduction to Java\2. Variables\Challenge 2"/>
+			<item value="C:\Users\2159998\Downloads\Java-Bootcamp-Resources-main\Java-Bootcamp-Resources-main\Module 1 - Introduction to Java\1. Getting Started\Challenge 1"/>
+			<item value="C:\Users\2159998\Arun Folder\sts projects\One_To_Many_Mapping"/>
+			<item value="C:\Users\2159998\Arun Folder\sts projects\RestAPI"/>
+			<item value="C:\Users\2159998\Arun Folder\sts projects\usertrackdelcopy"/>
+			<item value="C:\Users\2159998\Downloads\crud1\crud"/>
+			<item value="C:\Users\2159998\Downloads\crud1"/>
+			<item value="C:\Users\2159998\Downloads\FINAL\FINAL\Subscription-Management\subscription-management-service"/>
+			<item value="C:\Users\2159998\Downloads\subscription\subscription"/>
+			<item value="C:\Users\2159998\Downloads\subsrciption-management-services\subsrciption-management-services"/>
+			<item value="C:\Users\2159998\Downloads\backend\backend"/>
+			<item value="C:\Users\2159998\Arun Folder\sts projects\MicroServices\MicroServicesV2\naming-server"/>
+			<item value="C:\Users\2159998\Downloads\usertrackdel\usertrackdel"/>
+			<item value="C:\Users\2159998\Arun Folder\sts projects\MicroServices\MicroServicesV2\currency-conversion-service"/>
+			<item value="C:\Users\2159998\Arun Folder\sts projects\MicroServices\MicroServicesV2\limits-service"/>
+			<item value="C:\Users\2159998\Downloads\demo\demo"/>
+		</list>
+		<section name="SmartImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="281"/>
+			<item key="DIALOG_Y_ORIGIN" value="11"/>
+			<item key="DIALOG_WIDTH" value="1380"/>
+			<item key="DIALOG_HEIGHT" value="1008"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="518"/>
+		<item key="DIALOG_Y_ORIGIN" value="203"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+</section>

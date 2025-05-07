@@ -1,0 +1,18 @@
+package hackerrank;
+
+import java.util.Scanner;
+
+public class StringTokens {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		String s = "???           YES      leading spaces        are valid,    problemsetters are         evillllll    ";
+		s = s.trim();
+		String[] arraystr = s.split("[!,?._@ ]+");
+		arraystr[0] = arraystr[0].trim();
+		System.out.println(arraystr[0].isBlank());
+		System.out.println(arraystr.length);
+		for(String str : arraystr) System.out.println(str);
+	}
+}

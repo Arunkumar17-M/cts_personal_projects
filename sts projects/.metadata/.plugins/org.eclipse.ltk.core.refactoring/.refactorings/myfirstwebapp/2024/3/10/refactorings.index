@@ -1,0 +1,9 @@
+1709543988617	Copy file
+1709546795981	Copy file
+1709611492073	Copy file
+1709635760010	Extract local variable 'username'
+1709802269831	Delete element
+1709818513059	Extract method 'getLoggedInUsername'
+1709819729556	Extract local variable 'username'
+1709819755955	Extract local variable 'password'
+1709819794589	Extract method 'createNewUser'

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;P&apos; from expression &apos;new Person(23,&quot;Adam&quot;)&apos;&#x0D;&#x0A;- Original project: &apos;HandsOn&apos;&#x0D;&#x0A;- Variable name: &apos;P&apos;&#x0D;&#x0A;- Destination method: &apos;datastructures.linkedlist.Main.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;new Person(23,&quot;Adam&quot;)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;P&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;datastructures.linkedlist{Main.java" name="P" replace="true" selection="401 22" stamp="1702375845704" varType="false" version="1.0"/>
+</session>

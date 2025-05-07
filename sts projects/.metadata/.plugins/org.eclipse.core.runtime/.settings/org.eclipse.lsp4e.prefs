@@ -1,0 +1,6 @@
+//org.eclipse.languageserver.languages.springboot/org.eclipse.jdt.core.javaSource=true
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.boot.factories=true
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.properties.application.properties=true
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.properties.application.yml=true
+//org.eclipse.languageserver.languages.springboot/org.springframework.boot.ide.xmlconfig=true
+eclipse.preferences.version=1

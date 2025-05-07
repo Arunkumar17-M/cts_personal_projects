@@ -1,0 +1,14 @@
+package hackerrank;
+
+import java.util.Scanner;
+
+public class StringTokens {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		String s = scan.nextLine();
+		String[] arraystr = s.split("[A-Za-z !,?._'@]+");
+		for(String str : arraystr) System.out.println(str);
+	}
+}

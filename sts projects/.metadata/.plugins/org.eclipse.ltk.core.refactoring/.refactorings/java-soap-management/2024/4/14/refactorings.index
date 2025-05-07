@@ -1,0 +1,6 @@
+1711954921696	Extract method 'mapCourse'
+1711955235638	Inline method 'mapCourse'
+1711955346337	Extract method 'mapCourse'
+1711955358097	Inline local variable 'courseDetails'
+1711955409722	Extract method 'mapCourseDetails'
+1712034573532	Delete element

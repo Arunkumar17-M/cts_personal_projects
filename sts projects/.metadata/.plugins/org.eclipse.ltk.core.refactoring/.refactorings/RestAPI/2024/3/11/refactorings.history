@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;survey&apos; from expression &apos;retrieveAllSurveyQuestions(surveyId)&apos;&#x0D;&#x0A;- Original project: &apos;RestAPI&apos;&#x0D;&#x0A;- Variable name: &apos;survey&apos;&#x0D;&#x0A;- Destination method: &apos;com.cts.main.survey.SurveyService.retrieveSpecificSurveyQuestion(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;retrieveAllSurveyQuestions(surveyId)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;survey&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cts.main.survey{SurveyService.java" name="survey" replace="true" selection="1947 36" stamp="1710400785687" varType="false" version="1.0"/>
+</session>
