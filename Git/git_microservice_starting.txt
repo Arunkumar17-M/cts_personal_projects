@@ -1,0 +1,47 @@
+C:\Users\2159998>cd C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices>mkdir git-localconfig-repo
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices>cd git*
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices\git-localconfig-repo>echo %cd%
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices\git-localconfig-repo
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices\git-localconfig-repo>git init
+Initialized empty Git repository in C:/Users/2159998/Arun Folder/Git/spring-microservices-v2/microservices/git-localconfig-repo/.git/
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices\git-localconfig-repo>code
+
+
+
+After opening vcode open folder C:/Users/2159998/Arun Folder/Git/spring-microservices-v2/microservices/git-localconfig-repo to this path and create new file with name limits-service.properties and in the file write
+limits-service.minimum=4
+limits-service.maximum=996
+
+Then save and do the following step below in cmd:
+
+
+
+
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices\git-localconfig-repo>git add *
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices\git-localconfig-repo>git commit -m "adding limits-service.properties"
+[master (root-commit) 104cf48] adding limits-service.properties
+ Committer: Kumar M <2159998@cognizant.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+ create mode 100644 limits-service.properties
+
+C:\Users\2159998\Arun Folder\Git\spring-microservices-v2\microservices\git-localconfig-repo>
