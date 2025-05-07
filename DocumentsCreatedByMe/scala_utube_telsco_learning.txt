@@ -1,0 +1,90 @@
+scala version 2:
+----------------
+
+-> In scala data type is not primitive like java, everything in class in data type for int, float, String, etc,.
+-> without semicolon also it will work.
+-> changing the value in scala is mutation, we should not use like that in scala.
+
+var and val variable:
+---------------------
+
+-> scala want to do concurrency so that changing value is ok for certain condition, but changing the value is wrong because the scala is for running the multiple thread and accessing the same variable that change also there will affect the thread sharing.
+-> if we don't want to change like that from the above proble use "val" instead "var".
+
++ is not operator:
+------------------
+
+-> If i want to perform the addition opeation in scala that just using "+" it will work and also operator overloading also will work.
+-> everthing in scala is function so "+" is also a function. "+" is like "def +(args: Int): Int" function.
+-> so proper way to use the function is like ".+" to use the function to call.
+-> so If i operform 8 + 7, then 8 is object and "." like used and "+" function so "object.+(argument)" then 8.+(7).
+
+Class and Onject in Scala:
+--------------------------
+
+-> create class in scala simply using "case class <classname>(args...)"
+-> eg: case class Student(var id: Int, var name: String, var marks: Int)
+-> for default value for construtor is "case class(var id: Int = 90, var name: String = "john", var marks: Int=90)"
+-> for initialization "var s1 = Student(4)" for id will be 4 and remaining all are default value.
+-> if do want to initialize value for name use Studnet(name = "Kumar") and not Student("kumar")
+
+Functions in scala:
+-------------------
+
+-> to define the function write "def <function name>(args : <class type>) = {statements}".
+
+List and Lambda expression in scala:
+------------------------------------
+
+-> to create list in scala is using just "var <variable name> = List(1,3,3,6,7)"
+-> for printing using lambda in scala is "<varibale name>.foreach{i => println(i)}"
+-> Note: flower bracket is important in "foreach{}".
+
+List Reverse,  Drop and Take in scala:
+--------------------------------------
+
+-> reverse function in scala will reverse the list eg: var num = List(2,2,345,5,6); num.reverse
+-> drop will remove the first two elements, eg: num.drop(2) so it will remove the first two elementand retuen remaining
+-> take will take the how many number of element in list eg:num.take(2) -> it will take first two element
+-> without "." notation we can use this drop and take eg: num drop 2 take 3.
+
+Data Type Hierarchy:
+--------------------
+
+
+						Any
+						 |
+				----------------------------------------
+				|				      	|
+			      AnyVal				      AnyRef
+				|					|
+		-----------------------------			-------------------------
+		|	   |		    |			|	    |		|
+	Numeric Type	Boolean		   char		   Collections	  Class	      String
+									   /\
+									    |
+									    |
+									  Null
+									   /\
+									    |
+									    |
+									 Nothing
+
+
+List of Complex Object in Scala:
+--------------------------------
+
+-> eg: student having id, name, marks then we use some method to get the value.
+-> head method will give only first value of the list of the object.
+-> "tail" method will give the value after head values.
+-> partition() method is a member of TraversableLike trait, it is used to run a predicate method on each elements of a collection. It returns two collections, one collection is of elements which satisfiles a given predicate function and another collection is of elements which do not satisfy the given predicate function.
+-> filter() method is utilized to select all elements of the list which satisfies a stated predicate.
+
+Tuples in Scala:
+----------------
+
+-> Tuple elements can be accessed using an underscore syntax, method tup._i is used to access the ith element of the tuple.
+-> Pattern matching is a mechanism for checking a value against a pattern. A successful match can also deconstruct a value into its constituent parts.
+	eg: Here, in above example var (a, b, c)= (15, “chandan”, true) expression assign a = 15, b = “chandan”, c = true.
+	
+

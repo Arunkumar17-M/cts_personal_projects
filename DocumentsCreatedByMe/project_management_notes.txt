@@ -1,0 +1,52 @@
+Planning: -
+--------
+
+	-Analyse
+	-Evaluate
+	-Decide
+	-Organize
+
+
+Three Fundemental Steps in Planning: -
+-----------------------------------
+
+	-Define Goal	-Evaluate Options	-Choose and Confirm the best option to achieve the goal
+
+
+Complex human endeavors involve planning on two levels: -
+------------------------------------------------------
+
+	-Strategic(Should we do it?)
+	-tactical(How do we do it? and When and what resources should we spend.)
+
+
+The project manager knows and can control : -
+-----------------------------------------
+
+	-creates to-do lists
+	-orders the items in a way that is most efficient
+	-assigns the best people to the appropriate tasks
+
+
+The things the project manager doesn't know and can't control: -
+-------------------------------------------------------------
+
+	-Risk Assessment
+	-Estimations and forecasts are part of this process
+	-The project manager is responsible for eliminating or decreasing bad influences on the project
+
+Formula Three Point Estimation: -
+------------------------------
+
+	O - The optimistic time estimate.
+	M - most likely or normal time estimate.
+	P - the pessimistic time estimate.
+	T - the expected time.
+
+	T = (O + 4M + P)/6
+
+4 main reason for dependency in task: -
+------------------------------------
+
+	1. Logical Dependency.	2. Resource Constraints.    3.External Dependencies    4.Soft Dependencies.
+
