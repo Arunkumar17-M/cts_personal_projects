@@ -1,0 +1,21 @@
+<h1>Employee</h1>
+<div>
+    <form (ngSubmit)="!form.invalid && saveEmployee()" #form="ngForm">
+        <fieldset class="form-group" *ngIf="temp">
+            <label>Id:</label>
+            <input type="number" class="form-control" name="id" [ngModel]="emp.id" readonly>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label>EmployeeId:</label>
+            <input type="number" class="form-control" name="empid" [(ngModel)]="emp.empid" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label>EmployeeName:</label>
+            <input type="text" class="form-control" name="empname" [(ngModel)]="emp.empname" required>
+        </fieldset>
+
+        <input type="submit" class="btn btn-success" value="save">
+    </form>
+</div>

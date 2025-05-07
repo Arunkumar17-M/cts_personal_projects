@@ -1,0 +1,8 @@
+.container{
+    width: 40%;
+    padding: 30px;
+}
+.insertimage{
+    background-image: url('/assets/images/loginPage.jpg');
+    min-height: 88.2vh;
+}

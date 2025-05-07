@@ -1,0 +1,27 @@
+<div class="contanier">
+    <h1 style="color: darkblue;" class="text-center">Show Details</h1>
+    <br>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>FilmId:</th><td>{{film.id}}</td>
+            </tr>
+            <tr>
+                <th>FilmName:</th><td>{{film.filmName}}</td>
+            </tr>
+            <tr>
+                <th>Duration:</th><td>{{film.filmDuration}}</td>
+            </tr>
+            <tr>
+                <th>Price:</th><td>{{film.amount}}</td>
+            </tr>
+            <tr>
+                <th>ReleaseDate:</th><td>{{film.releaseDate | date}}</td>
+            </tr>
+            <tr>
+                <th>Watched:</th><td *ngIf="film.watched">Already Watched</td>
+                <td *ngIf="!film.watched">Not Watched</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

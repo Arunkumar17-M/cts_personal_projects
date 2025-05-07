@@ -1,0 +1,19 @@
+<h1>Todo</h1>
+<div>
+
+    <form (ngSubmit)="!todoform.invalid && saveTodo()" #todoform="ngForm">
+        <fieldset class="form-group">
+            <label>Description</label>
+            <input type="text" [(ngModel)]="todo.description" class="form-control" name="description"
+             required>
+        </fieldset>
+
+        <fieldset>
+            <label>Target Date</label>
+            <input type="date" [ngModel]="todo.targetDate | date:'yyyy-MM-dd'"
+                (ngModelChange)="todo.targetDate = $event" class="form-control" name="targetDate" required>
+        </fieldset>
+
+        <input type="submit" class="btn btn-success" value="save">
+    </form>
+</div>

@@ -1,0 +1,56 @@
+{
+  "fossa": {
+    "enabled": true,
+    "projectName": "[FOSSA-PROJECT-NAME]",
+    "teamName": "[FOSSA-TEAM-NAME]",
+    "policyName": "Website/Hosted Service Use",
+    "secretName": "[FOSSA-SECRET-NAME]",
+    "enableBreakBuildOnIssue": false
+  },
+  "sonarqube": {
+    "enabled": false,
+    "enableBranchAnalysis": false,
+    "enableBreakBuildOnIssue": false,
+    "secretName": "[SONARQUBE-SECRET-NAME]"
+  },
+  "checkmarx": {
+    "enabled": true,
+    "projectName": "[CHECKMARX-PROJECT-NAME]",
+    "teamPath": "[CHECKMARX-TEAM-PATH]",
+    "presetId": "Ford - Web Applications",
+    "secretName": "[CHECKMARX-SECRET-NAME]",
+    "enableBreakBuildOnIssue": false,
+    "allowedHighSeverity": 0,
+    "allowedMediumSeverity": 0,
+    "allowedLowSeverity": 0
+  },
+  "compodoc": {
+    "enabled": false
+  },
+  "buildah": {
+    "buildExtraArgs": "[BUILDAH-BUILD-EXTRA-ARGS]",
+    "pushExtraArgs": "[BUILDAH-PUSH-EXTRA-ARGS]"
+  },
+  "cloudRun": {
+    "enabled": true,
+    "secretName": "google-creds",
+    "serviceName": "[DEPLOYED-SERVICE-NAME]",
+    "projectId": "[GCP-PROJECT-ID]",
+    "region": "[GCP-REGION]",
+    "serviceAccount": "[CLOUDRUN-IDENTITY-SERVICE-ACCOUNT]",
+    "ingress": "[GCP-INGRESS]",
+    "vpcEgress": "[GCP-VPC-EGRESS]",
+    "vpcConnector": "[GCP-VPC-CONNECTOR]",
+    "imageRegistry": "[GCP-REGION]-docker.pkg.dev",
+    "imagePath": "[GCP-PROJECT-ID]/[CONTAINER-IMAGES-FOLDER]",
+    "imageTag": "[VERSION]",
+    "additionalFlags": ""
+  },
+  "jfrog": {
+    "authSecret": "[JFROG-TEKTON-AUTH-SECRET-NAME]",
+    "authEmail": "[JFROG-AUTH-EMAIL]"
+  },
+  "unshallowClone": {
+    "enabled": false
+  }
+}

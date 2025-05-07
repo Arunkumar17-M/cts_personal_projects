@@ -1,0 +1,13 @@
+<div class="insertimage">
+    <div>
+        <br><br><br><br>
+    </div>
+    <div class="container" align="center">
+        <h1 style="text-align: center; color: white;">{{headername}}</h1><br>
+        <p *ngIf="invalid" class="alert alert-warning">{{errorMessage}}</p>
+        <input type="text" class="form-control" [(ngModel)]="username" placeholder="Username" required><br>
+        <input type="password" class="form-control" [(ngModel)]="password" placeholder="Password" required><br>
+        <p *ngIf="register" class="alert alert-success">{{registered}}</p>
+        <input type="submit" [value]="headername" class="btn btn-success" (click)="validate()">
+    </div>
+</div>

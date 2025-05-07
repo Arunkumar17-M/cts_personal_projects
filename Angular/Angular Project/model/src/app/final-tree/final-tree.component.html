@@ -1,0 +1,23 @@
+<mat-tree [dataSource]="dataSource"
+            [treeControl]="cssTreeControl"
+            class = "example-tree">
+    <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle >
+        {{node.name}}
+    </mat-tree-node>
+
+    <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChildInPmt">
+        <div class="mat-tree-node">
+            <button mat-icon-button matTreeNodeToggle [attr.aria-label]= 
+                "'Toggle ' + node.parent_company"> 
+                <mat-icon class="mat-icon-rtl-mirror"> 
+                    {{cssTreeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                </mat-icon> 
+            </button>
+            {{node.name}}
+        </div>
+        <div [class.example-tree-invisible]= 
+			"!cssTreeControl.isExpanded(node)" role="group"> 
+			<ng-container matTreeNodeOutlet></ng-container> 
+		</div>
+    </mat-nested-tree-node>
+</mat-tree>

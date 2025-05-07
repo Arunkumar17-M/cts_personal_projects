@@ -1,0 +1,11 @@
+<h1>Login!</h1>
+<div class="container">
+    <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
+    <div>
+        Username:<input type="text" [(ngModel)]="userName">
+        Password:<input type="password" [(ngModel)]="password">
+        <!-- <input type="button" (click)="todo()" class="btn btn-success" value="login"> -->
+        <!-- <input type="button" (click)="basicAuthtodo()" class="btn btn-success" value="login"> -->
+        <input type="button" (click)="handelJWTAuthLogin()" class="btn btn-success" value="login">
+    </div>
+</div>

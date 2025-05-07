@@ -1,0 +1,9 @@
+<p>two-waybinding works!</p>
+<input type="text" [(ngModel)]="username"><br>
+<p>{{username}}</p>
+<input type="button" [disabled]="username === ''" 
+(click)="username=''" value="resetName">
+
+<p *ngIf="username!==''; else elsestm">{{username}}</p>
+<ng-template #elsestm>Empty</ng-template>
+<hr size="3">

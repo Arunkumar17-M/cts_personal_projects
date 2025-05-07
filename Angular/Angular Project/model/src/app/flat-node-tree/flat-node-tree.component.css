@@ -1,0 +1,13 @@
+h1, h3 { 
+    color: green; 
+    font-family: "Roboto", sans-serif; 
+    text-align: center; 
+  } 
+    
+  .mat-tree { 
+    background: transparent; 
+  } 
+    
+  .mat-tree-node { 
+    color: black; 
+  }

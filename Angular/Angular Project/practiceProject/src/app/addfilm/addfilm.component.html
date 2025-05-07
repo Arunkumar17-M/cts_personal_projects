@@ -1,0 +1,39 @@
+<div class="container">
+    <h1 class="text-center">Film</h1>
+    <hr size="5">
+    <form (ngSubmit)="!form.invalid && saveFilm()" #form="ngForm">
+        <fieldset class="form-group" *ngIf="temp">
+            <input type="number" class="form-control" name="film.id" [ngModel]="film.id" readonly>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <input type="text" class="form-control" name="film.filmName" 
+            [(ngModel)]="film.filmName" placeholder="Enter Film Name" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <input type="text" class="form-control" name="film.filmDuration" 
+            [(ngModel)]="film.filmDuration" placeholder="Enter Duration" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <input type="number" class="form-control" name="film.amount" 
+            [(ngModel)]="film.amount" placeholder="Enter Price" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <input type="date" class="form-control" name="film.releaseDate" 
+            [(ngModel)]="film.releaseDate" placeholder="Enter Release Date" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label>Watched:</label>
+            <select [(ngModel)]="watchedtemp" name="watchedtemp" class="form-select" required>
+                <option value="true">Already Watched</option>
+                <option value="false">Not Yet Watched</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" class="btn btn-success" value="save">
+    </form>
+</div>

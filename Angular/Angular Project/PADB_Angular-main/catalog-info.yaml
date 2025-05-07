@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: PADB
+  annotations:
+    github.com/project-slug: ASARAV27/PADB_Angular
+    sonarqube.org/project-key: 
+#    fossa.io/project-name:
+spec:
+  type: website
+  lifecycle: experimental
+  owner: 

@@ -1,0 +1,43 @@
+{
+	"name": "FRF Starter App",
+	"short_name": "PADB",
+	"description": "An frf based starter application",
+	"icons": [
+		{
+			"src": "assets/image/ford_favicon16_32_64.ico",
+			"sizes": "16x16 32x32 64x64"
+		},
+		{
+			"src": "assets/image/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "assets/image/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "assets/image/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "assets/image/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"display": "standalone",
+	"start_url": ".",
+	"theme_color": "#00095B",
+	"background_color": "#fff",
+	"orientation": "portrait",
+	"frf": {
+		"version": "16.1.0"
+	}
+}

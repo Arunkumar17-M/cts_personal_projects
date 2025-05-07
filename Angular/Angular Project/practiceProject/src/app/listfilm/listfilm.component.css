@@ -1,0 +1,12 @@
+#element{
+    padding-left: 13%;
+}
+#full{
+    background-image: url("/assets/images/homepage.png");
+    min-width: 212.7vh;
+    min-height: 88.2vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

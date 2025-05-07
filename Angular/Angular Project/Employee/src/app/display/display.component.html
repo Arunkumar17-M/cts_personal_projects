@@ -1,0 +1,24 @@
+<div align="center">
+    <table class="table" style="width: 75%;">
+        <thead>
+            <th>ID</th>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let value of emp">
+                <td>{{value.id}}</td>
+                <td><button class="btn btn-info"
+                    (click)="show(value.empid)">
+                    {{value.empid}}</button></td>
+                <td>{{value.empname}}</td>
+                <td><button class="btn btn-success"
+                    (click)="updatefunc(value.empid)">Update</button></td>
+                <td><button class="btn btn-warning"
+                    (click)="deletefunc(value.empid)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

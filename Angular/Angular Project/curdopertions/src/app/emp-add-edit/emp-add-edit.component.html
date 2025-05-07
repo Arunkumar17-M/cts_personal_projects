@@ -1,0 +1,57 @@
+
+<div mat-dialog-title>
+    <h1>Track Deliverables</h1>
+
+</div>
+<form [formGroup]="trackDeliverablesForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="content">
+
+    <div class="row">
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput type="text"  formControlName="EmployeeName" required minlength="2">
+        
+        
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Role</mat-label>
+        <input matInput type="text" formControlName="EmpRole" required minlength="2">
+      </mat-form-field>
+    </div>
+    
+    <div class="row">
+       <mat-form-field appearance="outline">
+        <mat-label>Deliverable</mat-label>
+            <mat-select formControlName="DeliverableName">
+            <mat-option *ngFor="let val of  deliverableList" [value]="val">{{val}}
+               
+            </mat-option>
+            
+          </mat-select> 
+         </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Sub Deliverable</mat-label>
+            <input matInput type="text" formControlName="SubDeliverableName" required minlength="3">
+          </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-radio-group aria-label="Select Option" formControlName="CurrentStatus">
+            <mat-label><b>Current-Status</b></mat-label>
+            <mat-radio-button value="Completed">Completed</mat-radio-button>
+            <mat-radio-button value="In Progress">In Progress</mat-radio-button>
+            <mat-radio-button value="Not-Completed">Not Completed</mat-radio-button>
+          </mat-radio-group>
+          
+    </div>
+    
+    
+
+</div>
+
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button color="primary" type="submit">{{data? 'Update': 'Save'}}</button>
+    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+
+</div>
+</form>

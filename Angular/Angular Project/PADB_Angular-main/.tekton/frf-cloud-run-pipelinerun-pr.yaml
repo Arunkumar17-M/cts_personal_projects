@@ -1,0 +1,75 @@
+#FRF Tekton Pipeline: v16.1.0
+apiVersion: tekton.dev/v1
+kind: PipelineRun
+metadata:
+  name: "pr-{{pull_request_number}}.frf-cloud-run-pipelinerun"
+  labels:
+    tekton-notify.iac.ford.com/name: "pr-{{pull_request_number}}.frf-cloud-run-pipelinerun"
+  annotations:
+    pipelinesascode.tekton.dev/on-cel-expression: |
+      event == "pull_request" && (target_branch == "main" ||
+                          target_branch == "refs/heads/main" ||
+                          target_branch == "dev" ||
+                          target_branch == "refs/heads/dev" )
+    pipelinesascode.tekton.dev/max-keep-runs: "2"
+
+    tekton-notify.iac.ford.com/generate-from-annotations: "true"
+    tekton-notify.iac.ford.com/git-enabled: "true"
+    tekton-notify.iac.ford.com/git-use-pac-secret: "true"
+
+    # *** REPLACE THE SQUARE BRACKET VALUE BELOW WITH YOUR OWN PROJECT BUCKET NAME ***
+    tekton-notify.iac.ford.com/gcs-bucket-name: [PROJECT-BUCKET-NAME]
+    tekton-notify.iac.ford.com/gcs-bucket-path: logs/{{target_namespace}}/{{repo_name}}/{{source_branch}}
+    tekton-notify.iac.ford.com/gcs-bucket-wif-kube-sa: pipeline
+    tekton-notify.iac.ford.com/gcs-bucket-wif-config-map: google-creds-dev
+    tekton-notify.iac.ford.com/gcs-bucket-wif-config-map-key: credentials_config.json
+
+spec:
+  params:
+    - name: git-repo-url
+      value: "{{ repo_url }}"
+    - name: git-revision
+      value: "{{ revision }}"
+    - name: git-target-branch
+      value: "{{ target_branch }}"
+    - name: git-source-branch
+      value: "{{ source_branch }}"
+    - name: isPullRequest
+      value: "true"
+  pipelineRef:
+    resolver: git
+    params:
+      - name: serverURL
+        value: "https://github.com"
+      - name: org
+        value: "ford-innersource"
+      - name: repo
+        value: "devenablement.wame.frf-tekton-pipelines"
+      - name: revision
+        value: "main"
+      - name: pathInRepo
+        value: "pipeline/frf-cloud-run/16.1.0/frf-cloud-run.yaml"
+      - name: token
+        value: "github-https-ghec"
+  taskRunTemplate:
+    serviceAccountName: pipeline
+    podTemplate:
+      securityContext:
+        fsGroupChangePolicy: OnRootMismatch
+  workspaces:
+    - name: shared-workspace
+      volumeClaimTemplate:
+        spec:
+          storageClassName: px-repl2-block
+          volumeMode: Filesystem
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 3Gi
+    - name: basic-auth
+      secret:
+        secretName: "{{ git_auth_secret }}"
+    - name: google-creds
+      configMap:
+        name: google-creds-dev
